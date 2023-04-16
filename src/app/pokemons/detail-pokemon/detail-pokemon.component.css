@@ -1,0 +1,24 @@
+.rarity-common {
+    color: #4caf50;
+    /* Vert */
+}
+
+.rarity-rare {
+    color: #2196f3;
+    /* Bleu */
+}
+
+.rarity-epic {
+    color: #9c27b0;
+    /* Violet */
+}
+
+.rarity-legendary {
+    color: #f44336;
+    /* Rouge */
+}
+
+.rarity-default {
+    color: #000000;
+    /* Noir */
+}
