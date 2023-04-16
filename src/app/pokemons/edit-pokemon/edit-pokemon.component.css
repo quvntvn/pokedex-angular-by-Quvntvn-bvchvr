@@ -1,0 +1,32 @@
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.card-panel.red.accent-1 {
+    margin-top: 5px;
+    padding: 5px 10px;
+}
+
+.section.center {
+    margin-top: 20px;
+}
+
+input[type=checkbox]+span {
+    padding-left: 30px;
+}
+
+input[type=checkbox]+span:before,
+input[type=checkbox]+span:after {
+    top: 2px;
+}
+
+.types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}

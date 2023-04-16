@@ -46,12 +46,18 @@
             <img [src]="pokemon.picture" alt="{{ pokemon.name }}">
           </div>
         </div>
-          <div class="form-group">
-            <label for="rarity">Rareté</label>
-            <select name="rarity" id="rarity" [(ngModel)]="pokemon.rarity" required>
-              <option *ngFor="let rarity of rarities" [value]="rarity">{{ rarity }}</option>
+        <div class="form-group">
+          <label for="rarity">Rareté</label>
+          <div class="input-field col s12">
+            <select [(ngModel)]="pokemon.rarity" name="rarity" id="rarity">
+              <option value="Commun">Commun</option>
+              <option value="Rare">Rare</option>
+              <option value="Épique">Épique</option>
+              <option value="Légendaire">Légendaire</option>
             </select>
+            <label for="rarity">Rareté</label>
           </div>
+        </div>
         <div class="form-group">
           <label for="types">Types</label>
 

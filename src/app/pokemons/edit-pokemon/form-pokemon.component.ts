@@ -31,13 +31,11 @@ export class FormPokemonComponent implements OnInit {
     this.rarities = this.getPokemonRarities();
   }
 
-  // Détermine si e type est passé en paramètres appartient ou no au pokémon en cours d'édition
   hasType(type: string): boolean{
     let index = this.pokemon.types.indexOf(type);
     return index > -1;
   }
 
-  // Méthode appelée lorsque l'utilisateur ajoute ou retire un type au pokémon au cours d'édition
   selectType($event: any, type: string): void {
     let checked = $event.target.checked;
 

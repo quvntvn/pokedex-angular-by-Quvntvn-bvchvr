@@ -14,8 +14,10 @@ export class DetailPokemonComponent implements OnInit {
   pokemons !: Pokemon[];
   pokemon: any = null;
 
-  constructor(private route: ActivatedRoute, private router: Router, private pokemonsService: PokemonsService) {
-  }
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private pokemonsService: PokemonsService) {}
 
   ngOnInit(): void {
     let idUrl = this.route.snapshot.params["id"];
@@ -30,6 +32,11 @@ export class DetailPokemonComponent implements OnInit {
     // }
   }
 
+  deletePokemon(): void {
+    this.pokemonsService.deletePokemon(this.pokemon)
+      .subscribe(_ => this.router.navigate(['/pokemon/all']));
+  }
+  
   goBack() {
     this.router.navigate(["/pokemon/all"]);
   }

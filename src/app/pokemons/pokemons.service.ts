@@ -73,4 +73,12 @@ private handleError<T>(operation = 'operation', result?: T) {
   //   return "false"
   // }
 
+  deletePokemon(pokemon: Pokemon): Observable<Pokemon> {
+    const url = `${this.pokemonsUrl}/${pokemon.id}`;
+    const httpOptions = {
+      headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+    };
+    
+    return this.http.delete<Pokemon>(url, httpOptions);
+  }
 }

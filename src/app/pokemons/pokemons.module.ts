@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
 import { PokemonTypeColorPipe } from './pipes/pokemon-type-color.pipe';
 import { BorderCardDirective } from './directive/border-card.directive';
 import { PokemonsRoutingModule } from './pokemons-routing.module';
-import { CreatePokemonComponent } from '../create-pokemon/create-pokemon.component';
+import { PokemonRarityColorPipe } from '../pipes/pokemon-rarity-color.pipe';
 
 @NgModule({
   declarations: [
@@ -19,8 +19,8 @@ import { CreatePokemonComponent } from '../create-pokemon/create-pokemon.compone
     FormPokemonComponent,
 
     PokemonTypeColorPipe,
+    PokemonRarityColorPipe, 
     BorderCardDirective,
-    CreatePokemonComponent
   ],
   imports: [
     CommonModule,
